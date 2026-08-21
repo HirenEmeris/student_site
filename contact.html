@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - [Your Name]</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about-us.html">About</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a> |
+        </nav>
+        <h1>Contact Me</h1>
+    </header>
+
+    <main>
+        <!-- The <div> (division) tag is a generic container element used to group and organize other HTML elements into distinct sections or blocks -->
+        <div id="mybox" style="border: 1px solid black; padding: 10px; margin: 10px;">
+            <h2>This is inside a div</h2>
+            <p>Div is a generic block container.</p>
+        </div>
+
+        <!-- The <span> tag is an inline container used to mark up a specific part of a text or document -->
+        <p>This is a <span style="color:red; font-weight:bold;">highlighted</span> word.</p>
+        <p>This is a paragraph where only <span style="color: red; font-weight: bold;">these specific words</span> are
+            styled red and bold.</p>
+
+        <!-- GOOGLE MAP iFRAME -->
+        <!-- Learning Outcome: Embed content using iFrames -->
+
+
+        <h2>My Favourite Place</h2>
+        <p>One place I really enjoy visiting is...</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3460.854123362797!2d30.9228941!3d-29.8396322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef700415046dd63%3A0x9b5193efac000621!2sEmeris%20-%20Durban%20Westville%20Campus!5e0!3m2!1sen!2sza!4v1786603182172!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+
+
+        <!-- YOUTUBE iFRAME -->
+        <!-- Learning Outcome: Embed content using iFrames (LO10) -->
+
+
+        <h2>Watch This</h2>
+        <p>Here's a video I'd like to share.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=tVeYqj5Z9D8TkCvJ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Built in audio and video elements -->
+
+        <h2>Listen to This</h2>
+
+        <audio controls>
+            <source src="_audio/kontraa-water-afro-pop-music-445661.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Watch This (Video)</h2>
+
+        <video controls width="500">
+            <source src="_videos/flower.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <!-- ============================================================ -->
+        <!-- CONTACT FORM                                       -->
+        <!-- Learning Outcome: Create forms using HTML            -->
+        <!-- Learning Outcome: Control forms                    -->
+        <!-- ============================================================ -->
+
+        <h2>Send Me a Message</h2>
+
+        <form>
+            <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            </div>
+            <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            </div>
+            <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"
+                    required></textarea><br><br>
+            </div>
+            <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="general">I have a question</option>
+                    <option value="feedback">I want to provide feedback</option>
+                    <option value="support">Just saying hello!</option>
+                </select><br><br>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </main>
+    <br>
+    <footer>
+        <p>&copy; 2026 My Student Profile</p>
+    </footer>
+
+</body>
+
+</html>
